@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polunet Hotspot</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.header p {
+  opacity: 0.7;
+}
+
+/* SECTION */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CARD */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.price {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #38bdf8;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* PAYMENT */
+.payment {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  opacity: 0.6;
+}
+
+/* ANIMATION */
+.fade {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header fade">
+  <img src="logo.png" class="logo">
+  <h1>PULONET HOTSPOT</h1>
+  <p>Internet Cepat • Stabil • Terjangkau</p>
+</div>
+
+<!-- ARTIKEL -->
+<div class="section fade">
+  <h2>Tentang Layanan Kami</h2>
+  <p>
+    Pulonet Hotspot menghadirkan koneksi internet berkualitas tinggi dengan sistem voucher yang fleksibel.
+    Cocok untuk semua kebutuhan mulai dari browsing, streaming, hingga gaming tanpa gangguan.
+  </p>
+</div>
+
+<!-- VOUCHER -->
+<div class="section fade">
+  <h2>Pilih Paket Internet</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>1 Jam</h3>
+      <div class="price">Rp2.000</div>
+      <p>Akses cepat untuk kebutuhan singkat</p>
+      <a href="https://wa.me/6281234567890?text=Pesan Voucher 1 Jam" class="btn">Pesan</a>
+    </div>
+
+    <div class="card">
+      <h3>3 Jam</h3>
+      <div class="price">Rp5.000</div>
+      <p>Streaming & belajar lancar</p>
+      <a href="https://wa.me/6281234567890?text=Pesan Voucher 3 Jam" class="btn">Pesan</a>
+    </div>
+
+    <div class="card">
+      <h3>1 Hari</h3>
+      <div class="price">Rp10.000</div>
+      <p>Full akses tanpa batas</p>
+      <a href="https://wa.me/6281234567890?text=Pesan Voucher 1 Hari" class="btn">Pesan</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- PEMBAYARAN -->
+<div class="section fade">
+  <h2>Pembayaran DANA</h2>
+
+  <div class="payment">
+    <p>Transfer ke nomor:</p>
+    <h2>08xxxxxxxxxx</h2>
+    <p>Kirim bukti pembayaran via WhatsApp</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © Pulonet Hotspot 2026
+</div>
+
+</body>
+</html>
